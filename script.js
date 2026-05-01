@@ -26,10 +26,10 @@ form.addEventListener('submit', function (event) {
 
             let wordData = data[0];
 
-            // 🔊 phonetic text
+            //  this is for the phonetic text of the word
             let phonetic = wordData.phonetic || "No phonetic available";
 
-            // 🔊 audio (find first valid one)
+            // this is the audio for the pronunciation of th eword
             let audio = "";
             if (wordData.phonetics.length > 0) {
                 let audioObj = wordData.phonetics.find(p => p.audio !== "");
@@ -38,7 +38,7 @@ form.addEventListener('submit', function (event) {
                 }
             }
 
-            // 📖 meanings + definitions
+            // THis is the meanings of the word
             let meaningsHTML = "";
 
             wordData.meanings.forEach(meaning => {
@@ -52,7 +52,7 @@ form.addEventListener('submit', function (event) {
                 });
             });
 
-            // 🎯 final render
+          // this is the final result that is displayed
             resultContainer.innerHTML = `
                 <h2>${wordData.word}</h2>
                 <p><em>${phonetic}</em></p>
