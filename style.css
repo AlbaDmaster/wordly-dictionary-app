@@ -1,0 +1,34 @@
+.container{
+    background-color: #eaf476;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+}
+#search-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.example {
+    color: gray;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+audio {
+    margin: 10px 0;
+}
+
+.meanings h3 {
+    margin-top: 15px;
+}
